@@ -215,7 +215,8 @@ a {
 }
 
 .AboutMe {
-  margin-top: 20vh;
+  margin-top: 15vh;
+  height: 75vh;
 }
 .AboutMe section:nth-child(1) {
   display: flex;
@@ -254,7 +255,7 @@ a {
 }
 
 .AboutMe p {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400;
   margin: 0;
   margin-bottom: 15px;
@@ -336,6 +337,7 @@ a {
 .prleft {
   padding-right: 5%;
   margin-top: 10vh;
+  margin-bottom: 15vh;
 }
 .prleft img {
   width: 12%;
@@ -376,7 +378,32 @@ a {
 .prleft a:hover {
   color: rgb(0, 69, 98);
 }
-
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer span {
+  width: 60%;
+  max-width: 500px;
+  height: 5px;
+  background-color: white;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 12px;
+}
+.footer a:hover {
+  color: #bebebe;
+}
 /* 48em = 768px */
 
 @media (min-width: 48em) {
@@ -393,5 +420,147 @@ a {
   }
   .nav .menu-icon {
     display: none;
+  }
+}
+@media (max-width: 48em) {
+  .headerHome {
+    height: auto;
+    margin-top: 20vh;
+  }
+  .headerHome .headerHomeText {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .headerHome .headerHomeText section {
+    justify-content: center;
+  }
+  .headerHome .headerHomeText section h1 {
+    width: auto;
+  }
+  .headerHome .headerHomeText section span {
+    display: none;
+  }
+  .headerHome .headerHomeText h1 {
+    font-size: 60px;
+    line-height: normal;
+  }
+  .headerHome .headerHomeText h3 {
+    font-size: 30px;
+  }
+  .headerHome .headerHomeText a {
+    width: auto;
+    margin-top: 5%;
+  }
+  .headerHomeImage {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: 5%;
+  }
+  .headerHomeImage img {
+    width: 80%;
+    margin-right: 0;
+  }
+
+  .AboutMe {
+    height: auto;
+    margin-top: 10vh;
+  }
+  .AboutMe section:nth-child(1) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .AboutMe section:nth-child(1) h1 {
+    width: auto;
+    text-align: center;
+  }
+  .AboutMe section:nth-child(1) span:nth-child(2) {
+    display: none;
+  }
+  .AboutMe section:nth-child(2) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .AboutMe section:nth-child(2) span:nth-child(1) {
+    display: none;
+  }
+  .AboutMe section:nth-child(2) h1 {
+    width: auto;
+    text-align: center;
+  }
+  .AboutMe p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    float: none;
+  }
+  .AboutMe p:nth-child(6),
+  .AboutMe p:nth-child(7) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .AboutMe p:nth-child(7) {
+    margin-bottom: 3vh;
+  }
+
+  .skillsHeader {
+    height: auto;
+    display: flex;
+    margin-top: 10vh;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skillsHeader span {
+    display: none;
+  }
+  .skillsHeader h1 {
+    padding-left: 0;
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .projects {
+    height: auto;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .prright {
+    padding-left: 0;
+    margin-top: 0vh;
+    width: 80%;
+  }
+  .prright img {
+    width: 20%;
+    margin-right: 5%;
+  }
+  .prright span {
+    display: none;
+  }
+  .prleft {
+    padding-right: 0;
+    margin-top: 5vh;
+    width: 80%;
+  }
+  .prleft img {
+    width: 20%;
+    margin-left: 5%;
+  }
+  .prleft span {
+    display: none;
+  }
+
+  .footer {
+    height: auto;
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer a {
+    margin: 10px;
   }
 }

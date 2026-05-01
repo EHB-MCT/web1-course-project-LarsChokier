@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <!-- https://larschokier.be/opdrachten/NOX_Lars/index.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>NOX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">
+                <figure class="logoN"></figure>
+            </a>
+            <section>
+                <p class="Menu" id="hamburgerButton">☰</p>
+                <a href="login.html"><figure class="user"></figure></a>
+                <a href="winkelmandje.html"><figure class="mandje"></figure></a>
+            </section>
+        </nav>
+        <section class="wkhead">
+                <h1>winkelmandje</h1>
+                <span></span>
+        </section>
+    </header>
+    <article class="winkelwagenArt">
+        <section class="winkCon">
+            <section class="winkItem">
+                <figure></figure>
+                <section>
+                    <p>Naam van product</p>
+                    <p>Kleine beschrijving van het product</p>
+                    <p>Aantal : 1</p>
+                    <p>€ 65,99</p>
+                </section>
+            </section>
+            <span></span>
+            <section class="winkItem">
+                <figure></figure>
+                <section>
+                    <p>Naam van product</p>
+                    <p>Kleine beschrijving van het product</p>
+                    <p>Aantal : 1</p>
+                    <p>€ 65,99</p>
+                </section>
+            </section>
+            <span></span>
+            <section class="winkItem">
+                <figure></figure>
+                <section>
+                    <p>Naam van product</p>
+                    <p>Kleine beschrijving van het product</p>
+                    <p>Aantal : 1</p>
+                    <p>€ 65,99</p>
+                </section>
+            </section>
+            <span></span>
+            <section class="winkItem">
+                <figure></figure>
+                <section>
+                    <p>Naam van product</p>
+                    <p>Kleine beschrijving van het product</p>
+                    <p>Aantal : 1</p>
+                    <p>€ 65,99</p>
+                </section>
+            </section>
+            <span></span>
+            <span></span>
+            <section class="Bestellen">
+                <p>€ 263.96</p>
+                <p>Incl. verzendkosten</p>
+                <h3>Bestellen</h3>
+            </section>
+        </section>
+    </article>
+    <section class="HamburgerMenu">
+        <section></section>
+        <section>
+            <img src="../afbeeldingen/LogoD1.png" alt="Logo NOX">
+            <span></span>
+            <a href="login.html">Login</a>
+            <a href="../index.html">Home</a>
+            <a href="winkelmandje.html">Winkelwagen</a>
+            <span></span>
+            <a href="#">Kledij Mannen</a>
+            <a href="#">Kledij Vrouwen</a>
+            <span></span>
+            <a href="#">Schoenen Mannen</a>
+            <a href="#">Schoenen Vrouwen</a>
+            <span></span>
+            <a href="#">Accesoires</a>
+            <a href="#">Tennis Kledij</a>
+        </section>
+    </section>
+    
+    <footer>
+        <span></span>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Kledij Mannen</a></li>		
+            <li><a href="#">Kledij Vrouwen</a></li>
+            <li><a href="#">Schoenen Mannen</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Schoenen Vrouwen</a></li>
+            <li><a href="#">Accessoires</a></li>
+            <li><a href="#">Tennis Kledij</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul class="MFooter">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Kledij Mannen</a></li>
+            <li><a href="#">Kledij Vrouwen</a></li>
+            <li><a href="#">Schoenen Mannen</a></li>
+            <li><a href="#">Schoenen Vrouwen</a></li>
+            <li><a href="#">Accessoires</a></li>
+            <li><a href="#">Tennis Kledij</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        <h3>©NOX - Arne & Lars</h3>
+        <span></span>
+    </footer>
+    
+    <script>
+        const menuBtn = document.getElementById('hamburgerButton');
+        const menu = document.querySelector('.HamburgerMenu');
+        const closeArea = document.querySelector('.HamburgerMenu section:nth-child(1)');
+        const logo = document.querySelector('.logoN');
+        const menuLogo = document.querySelector('.HamburgerMenu img');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+
+        closeArea.addEventListener('click', () => {
+            menu.classList.remove('active');
+        });
+
+        logo.addEventListener('click', () => {
+            menu.classList.remove('active');
+        });
+
+        menuLogo.addEventListener('click', () => {
+            menu.classList.remove('active');
+        });
+    </script>
+</body>
+
+</html>

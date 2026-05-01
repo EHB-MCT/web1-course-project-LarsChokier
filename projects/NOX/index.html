@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <!-- https://larschokier.be/opdrachten/NOX_Lars/index.html -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>NOX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <figure class="logoN"></figure>
+        </a>
+        <section>
+          <p class="Menu" id="hamburgerButton">☰</p>
+          <a href="paginas/login.html"><figure class="user"></figure></a>
+          <a href="paginas/winkelmandje.html"
+            ><figure class="mandje"></figure
+          ></a>
+        </section>
+      </nav>
+      <section class="H">
+        <section class="HH">
+          <h1>NOX</h1>
+        </section>
+      </section>
+    </header>
+    <section class="HamburgerMenu">
+      <section></section>
+      <section>
+        <img src="afbeeldingen/LogoD1.png" alt="Logo NOX" />
+        <span></span>
+        <a href="paginas/login.html">Login</a>
+        <a href="index.html">Home</a>
+        <a href="paginas/winkelmandje.html">Winkelwagen</a>
+        <span></span>
+        <a href="#">Kledij Mannen</a>
+        <a href="#">Kledij Vrouwen</a>
+        <span></span>
+        <a href="#">Schoenen Mannen</a>
+        <a href="#">Schoenen Vrouwen</a>
+        <span></span>
+        <a href="#">Accesoires</a>
+        <a href="#">Tennis Kledij</a>
+      </section>
+    </section>
+    <article class="BestSeller">
+      <h2>Best Sellers</h2>
+      <section class="BestSellerGall">
+        <section>
+          <section></section>
+          <h3>Verkochte Item</h3>
+          <p>€65,99</p>
+        </section>
+        <section>
+          <section></section>
+          <h3>Verkochte Item</h3>
+          <p>€65,99</p>
+        </section>
+        <section>
+          <section></section>
+          <h3>Verkochte Item</h3>
+          <p>€65,99</p>
+        </section>
+        <section>
+          <section></section>
+          <h3>Verkochte Item</h3>
+          <p>€65,99</p>
+        </section>
+      </section>
+    </article>
+    <article class="HomeIMGS">
+      <figure></figure>
+      <figure></figure>
+    </article>
+    <article class="NewIn">
+      <h2>New In</h2>
+      <section class="NewInGallCONTAINER">
+        <section class="NewInGallB1">
+          <figure></figure>
+        </section>
+        <section class="NewInGall">
+          <section>
+            <figure></figure>
+            <h3>Verkochte Item</h3>
+            <p>€65,99</p>
+          </section>
+          <section>
+            <figure></figure>
+            <h3>Verkochte Item</h3>
+            <p>€65,99</p>
+          </section>
+          <section>
+            <figure></figure>
+            <h3>Verkochte Item</h3>
+            <p>€65,99</p>
+          </section>
+          <section>
+            <figure></figure>
+            <h3>Verkochte Item</h3>
+            <p>€65,99</p>
+          </section>
+        </section>
+        <section class="NewInGallB2">
+          <figure></figure>
+        </section>
+      </section>
+    </article>
+    <section class="vierDelen">
+      <a href="#">
+        <figure>
+          <h3>Winter Clothes</h3>
+        </figure>
+      </a>
+      <a href="#">
+        <figure>
+          <h3>Outlet</h3>
+        </figure>
+      </a>
+      <a href="#">
+        <figure>
+          <h3>Accesoires</h3>
+        </figure>
+      </a>
+      <a href="#">
+        <figure>
+          <h3>Shoes</h3>
+        </figure>
+      </a>
+    </section>
+    <footer>
+      <span></span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Kledij Mannen</a></li>
+        <li><a href="#">Kledij Vrouwen</a></li>
+        <li><a href="#">Schoenen Mannen</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Schoenen Vrouwen</a></li>
+        <li><a href="#">Accessoires</a></li>
+        <li><a href="#">Tennis Kledij</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <ul class="MFooter">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Kledij Mannen</a></li>
+        <li><a href="#">Kledij Vrouwen</a></li>
+        <li><a href="#">Schoenen Mannen</a></li>
+        <li><a href="#">Schoenen Vrouwen</a></li>
+        <li><a href="#">Accessoires</a></li>
+        <li><a href="#">Tennis Kledij</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <h3>©NOX - Arne & Lars</h3>
+      <span></span>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById("hamburgerButton");
+      const menu = document.querySelector(".HamburgerMenu");
+      const closeArea = document.querySelector(
+        ".HamburgerMenu section:nth-child(1)"
+      );
+      const logo = document.querySelector(".logoN");
+      const menuLogo = document.querySelector(".HamburgerMenu img");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+
+      closeArea.addEventListener("click", () => {
+        menu.classList.remove("active");
+      });
+
+      logo.addEventListener("click", () => {
+        menu.classList.remove("active");
+      });
+
+      menuLogo.addEventListener("click", () => {
+        menu.classList.remove("active");
+      });
+
+      // Ik gebruik `addEventListener` voor elke klikactie. Dit zorgt ervoor dat de HTML schoon blijft
+      // (ik voeg dus geen `onclick`-attributen toe in mijn HTML), en het is beter voor onderhoudbaarheid en overzicht.
+
+      // Voor het openen en sluiten van het menu gebruik ik `classList.toggle()` en `classList.remove()`.
+      // Zo beheer ik de zichtbaarheid van het menu via CSS met de klasse 'active', in plaats van met `style.display`.
+      // Dit is beter omdat ik het gedrag dan in CSS kan aanpassen, zonder JavaScript te veranderen.
+
+      // Ik heb ook klikbare gebieden (zoals het logo en een lege klikzone) toegevoegd om het menu te sluiten.
+      // Dit maakt de gebruikerservaring beter en intuïtiever.
+    </script>
+  </body>
+</html>

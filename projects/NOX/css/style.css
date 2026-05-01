@@ -1,0 +1,1192 @@
+/* ----------------------------------
+   ALGEMENE STIJLEN
+---------------------------------- */
+* {
+    box-sizing: border-box;
+    font-family: Custom;
+}
+
+body {
+    width: 100vw;
+    overflow: none;
+}
+
+@font-face {
+    font-family: Custom;
+    src: url(../fonts/sylfaen.ttf);
+}
+
+
+/* ----------------------------------
+   NAVIGATIEBALK
+---------------------------------- */
+nav {
+    height: 10vh;
+}
+
+.logoN {
+    background-image: url("../afbeeldingen/LogoD1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30vw;
+    margin-left: 36vw;
+    height: 6vh;
+    margin-top: 4vh;
+    float: left;
+}
+
+.mandje {
+    background-image: url("../afbeeldingen/cart.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: right;
+    width: 6vw;
+    height: 6vh;
+    margin-top: 3vh;
+}
+
+.user {
+    background-image: url("../afbeeldingen/user.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: right;
+    width: 7vw;
+    height: 5vh;
+    margin-top: 3vh;
+}
+
+.Menu {
+    width: 7vw;
+    height: 6vh;
+    margin-top: 3vh;
+    font-size: 40px;
+    text-align: center;
+    float: right;
+    margin-right: 5vw;
+    cursor: pointer;
+}
+
+
+/* ----------------------------------
+   HEADER
+---------------------------------- */
+.H {
+    height: 90vh;
+    background-image: url("../afbeeldingen/back1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.HH {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 30%);
+}
+
+header h1 {
+    font-size: 14em;
+    font-family: Custom;
+}
+
+
+/* ----------------------------------
+   HAMBURGER MENU
+---------------------------------- */
+.HamburgerMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    flex-direction: row;
+}
+
+.HamburgerMenu.active {
+    display: flex;
+}
+
+.HamburgerMenu section:nth-child(1) {
+    backdrop-filter: blur(6px);
+    width: 60%;
+    height: 100%;
+}
+
+.HamburgerMenu span {
+    width: 40%;
+    height: 0.1vh;
+    background-color: black;
+}
+
+.HamburgerMenu section:nth-child(2) {
+    backdrop-filter: blur(6px);
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.HamburgerMenu section:nth-child(2) span:nth-child(2) {
+    width: 100%;
+}
+
+.HamburgerMenu section:nth-child(2) a:nth-child(3) {
+    margin-bottom: 5vh;
+}
+
+.HamburgerMenu section:nth-child(2) img {
+    width: 10vw;
+    margin-bottom: 0;
+}
+
+.HamburgerMenu section:nth-child(2) a {
+    font-family: Custom;
+    font-size: 1.5rem;
+    all: unset;
+    cursor: pointer;
+    color: black;
+    padding-left: 3%;
+}
+
+
+/* ----------------------------------
+   BESTSELLER SECTIE
+---------------------------------- */
+.BestSeller {
+    height: fit-content;
+}
+
+.BestSeller h2 {
+    padding-top: 10vh;
+    text-align: center;
+    font-family: Custom;
+    font-size: 5rem;
+    margin-bottom: 10vh;
+}
+
+.BestSellerGall {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.BestSellerGall > section {
+    height: fit-content;
+    width: 15vw;
+}
+
+.BestSellerGall > section > section {
+    height: 45vh;
+    width: 100%;
+    background-color: gray;
+}
+
+.BestSellerGall > section > h3,
+.BestSellerGall > section > p {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+
+/* ----------------------------------
+   HOME IMAGES
+---------------------------------- */
+.HomeIMGS {
+    height: 100vh;
+    margin-top: 10vh;
+}
+
+.HomeIMGS > figure {
+    width: 50%;
+    float: left;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.HomeIMGS figure:nth-child(1) {
+    background-image: url("../afbeeldingen/HOMEIMG1.png");
+}
+
+.HomeIMGS figure:nth-child(2) {
+    background-image: url("../afbeeldingen/HOMEIMG2.png");
+}
+
+
+/* ----------------------------------
+   NEW IN GALLERY
+---------------------------------- */
+.NewIn {
+    height: fit-content;
+}
+
+.NewIn h2 {
+    padding-top: 10vh;
+    text-align: center;
+    font-family: Custom;
+    font-size: 5rem;
+    margin-bottom: 10vh;
+}
+
+.NewInGallCONTAINER {
+    width: 100vw;
+    height: 70vh;
+}
+
+.NewInGallB1,
+.NewInGallB2 {
+    width: 10vw;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NewInGallB1 figure {
+    background-image: url("../afbeeldingen/arrow left.png");
+}
+
+.NewInGallB2 figure {
+    background-image: url("../afbeeldingen/arrow right.png");
+}
+
+.NewInGallB1 figure,
+.NewInGallB2 figure {
+    height: 20vh;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.NewInGall {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    float: left;
+    width: 80vw;
+    align-items: center;
+    height: 100%;
+}
+
+.NewInGall > section {
+    height: fit-content;
+    width: 15vw;
+}
+
+.NewInGall > section > figure {
+    height: 45vh;
+    width: 100%;
+    background-color: gray;
+}
+
+.NewInGall > section > h3,
+.NewInGall > section > p {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+
+/* ----------------------------------
+   4 DELEN (CATEGORIEËN)
+---------------------------------- */
+.vierDelen {
+    height: 200vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.vierDelen a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.vierDelen a figure {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    background-size: cover;
+}
+
+.vierDelen a figure h3 {
+    width: 100%;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.251);
+    font-family: Custom;
+    font-size: 40px;
+    color: white;
+}
+
+.vierDelen figure:hover {
+    background-color: rgba(128, 128, 128, 0.109);
+    filter: brightness(80%);
+}
+
+.vierDelen a:nth-child(1) figure { background-image: url("../afbeeldingen/WinterClothes.png"); }
+.vierDelen a:nth-child(2) figure { background-image: url("../afbeeldingen/Outlet.png"); }
+.vierDelen a:nth-child(3) figure { background-image: url("../afbeeldingen/accesoires.png"); }
+.vierDelen a:nth-child(4) figure { background-image: url("../afbeeldingen/shoes.png"); }
+
+
+/* ----------------------------------
+   FOOTER
+---------------------------------- */
+footer {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    width: 100vw;
+}
+
+footer > span {
+    width: 80vw;
+    margin-left: 10vw;
+    height: 2px;
+    background-color: black;
+    display: block;
+}
+
+footer > ul {
+    width: 50vw;
+    float: left;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+}
+
+footer ul:nth-child(2) {
+    padding-left: 15vw;
+}
+
+footer ul:nth-child(3) li {
+    padding-right: 15vw;
+    text-align: right;
+}
+
+footer li {
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+footer li:hover {
+    color: gray;
+}
+
+footer > ul a {
+    all: unset;
+}
+
+footer h3 {
+    width: 100vw;
+    text-align: center;
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+    font-size: 20px;
+}
+
+
+/* ----------------------------------
+   WINKELWAGEN
+---------------------------------- */
+.wkhead {
+    height: fit-content;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10vh;
+}
+
+.wkhead h1 {
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.wkhead span {
+    width: 70vw;
+    margin-left: 15vw;
+    height: 0.3vh;
+    margin-top: 3%;
+    background-color: black;
+    display: block;
+}
+
+.winkelwagenArt {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.winkCon {
+    width: 40vw;
+    height: fit-content;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 0;
+    flex-direction: column;
+}
+
+.winkItem {
+    width: 80%;
+    margin: 3vh 0;
+}
+
+.winkItem figure {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    float: left;
+    background-color: gray;
+    border: 1px double black;
+}
+
+.winkItem section {
+    width: 70%;
+    float: left;
+    padding-left: 5%;
+}
+
+.winkItem > section p:nth-child(1),
+.winkItem > section p:nth-child(2) {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    margin-top: 2%;
+}
+
+.winkItem > section p:nth-child(1) {
+    font-weight: 550;
+}
+
+.winkItem > section p:nth-child(3),
+.winkItem > section p:nth-child(4) {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    float: left;
+    margin-top: 25%;
+}
+
+.winkItem > section p:nth-child(4) {
+    font-weight: 550;
+}
+
+.winkCon span {
+    width: 70%;
+    height: 0.1vh;
+    background-color: black;
+}
+
+.winkCon span:nth-child(9) {
+    margin-top: 0.3vh;
+}
+
+.Bestellen {
+    width: 70%;
+    height: fit-content;
+    margin-top: 3vh;
+}
+
+.Bestellen p:nth-child(1),
+.Bestellen p:nth-child(2) {
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Bestellen p:nth-child(1) {
+    font-weight: 550;
+}
+
+.Bestellen p:nth-child(2) {
+    margin-top: 1.5vh;
+    font-size: 14px;
+}
+
+.Bestellen h3 {
+    text-align: right;
+    margin-top: 2vh;
+    font-size: 2rem;
+    text-decoration: underline;
+    width: fit-content;
+    margin: auto;
+}
+
+
+/* ----------------------------------
+   LOGIN FORMULIER
+---------------------------------- */
+.loginInputs {
+    height: fit-content;
+    padding-top: 5vh;
+}
+
+#naamInput,
+#passwordInput {
+    width: 30vw;
+    margin-left: 35vw;
+    margin-bottom: 3vh;
+    height: 4vh;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: black;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#passwordInput {
+    margin-bottom: 2vh;
+}
+
+#naamInput:focus,
+#passwordInput:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+    background-color: white;
+    color: rgb(55, 55, 55);
+}
+
+#naamInput:hover,
+#passwordInput:hover {
+    border-bottom: 2px solid gray;
+}
+
+.loginBB {
+    padding-left: 35vw;
+    padding-right: 35vw;
+    height: fit-content;
+}
+
+.loginBB a {
+    all: unset;
+}
+
+.loginBB p,
+.loginBB h3 {
+    font-family: Custom;
+    width: fit-content;
+    margin-bottom: 2vh;
+}
+
+.loginBB h3 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin: auto;
+}
+
+.loginBB a:nth-child(1) {
+    margin-left: auto;
+}
+
+.loginBB a:nth-child(3) {
+    float: left;
+    margin-top: 3vh;
+}
+
+.loginBB a:nth-child(4) {
+    float: right;
+    margin-left: auto;
+    margin-top: 3vh;
+}
+.MFooter {
+    display: none;
+}
+@media (max-width: 768px) {
+    
+/* ----------------------------------
+   NAVIGATIEBALK
+---------------------------------- */
+nav {
+    height: 20vh;
+}
+
+.logoN {
+    background-image: url("../afbeeldingen/LogoD1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50vw;
+    margin-left: 25vw;
+    height: 6vh;
+    margin-top: 4vh;
+    float: left;
+}
+
+.mandje {
+    display: none;
+}
+
+.user {
+    display: none;
+}
+
+.Menu {
+    width: 7vw;
+    height: 6vh;
+    margin-top: 5vh;
+    font-size: 40px;
+    text-align: center;
+    float: right;
+    margin-right: 5vw;
+    cursor: pointer;
+}
+
+
+/* ----------------------------------
+   HEADER
+---------------------------------- */
+.H {
+    height: 80vh;
+    background-image: url("../afbeeldingen/back1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.HH {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 30%);
+}
+
+header h1 {
+    font-size:10rem;
+    font-family: Custom;
+    margin-bottom: 5vh;
+}
+
+
+/* ----------------------------------
+   HAMBURGER MENU
+---------------------------------- */
+.HamburgerMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    flex-direction: row;
+}
+
+.HamburgerMenu.active {
+    display: flex;
+}
+
+.HamburgerMenu section:nth-child(1) {
+    display: none;
+}
+
+.HamburgerMenu span {
+    width: 60%;
+    height: 0.2%;
+    background-color: black;
+}
+
+.HamburgerMenu section:nth-child(2) {
+    backdrop-filter: blur(6px);
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.HamburgerMenu section:nth-child(2) span:nth-child(2) {
+    width: 100%;
+}
+
+.HamburgerMenu section:nth-child(2) a:nth-child(3) {
+    margin-bottom: 4vh;
+}
+
+.HamburgerMenu section:nth-child(2) img {
+    width: 40vw;
+    margin-bottom: 0;
+}
+
+.HamburgerMenu section:nth-child(2) a {
+    font-family: Custom;
+    font-size: 5rem;
+    all: unset;
+    cursor: pointer;
+    color: black;
+    padding-left: 0;
+}
+
+
+/* ----------------------------------
+   BESTSELLER SECTIE
+---------------------------------- */
+.BestSeller {
+    height: fit-content;
+}
+
+.BestSeller h2 {
+    padding-top: 10vh;
+    text-align: center;
+    font-family: Custom;
+    font-size: 5rem;
+    margin-bottom: 10vh;
+}
+
+.BestSellerGall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.BestSellerGall > section {
+    height: fit-content;
+    width: 70vw;
+    margin-bottom: 10%;
+}
+
+.BestSellerGall > section > section {
+    height: 45vh;
+    width: 100%;
+    background-color: gray;
+}
+
+.BestSellerGall > section > h3,
+.BestSellerGall > section > p {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+
+/* ----------------------------------
+   HOME IMAGES
+---------------------------------- */
+.HomeIMGS {
+    display: none;
+}
+
+
+/* ----------------------------------
+   NEW IN GALLERY
+---------------------------------- */
+.NewIn {
+    height: fit-content;
+}
+
+.NewIn h2 {
+    padding-top: 10vh;
+    text-align: center;
+    font-family: Custom;
+    font-size: 5rem;
+    margin-bottom: 0vh;
+}
+
+.NewInGallCONTAINER {
+    width: 100vw;
+    height: 70vh;
+}
+
+.NewInGallB1,
+.NewInGallB2 {
+    width: 10vw;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NewInGallB1 figure {
+    background-image: url("../afbeeldingen/arrow left.png");
+}
+
+.NewInGallB2 figure {
+    background-image: url("../afbeeldingen/arrow right.png");
+}
+
+.NewInGallB1 figure,
+.NewInGallB2 figure {
+    height: 20vh;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.NewInGall {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    float: left;
+    width: 80vw;
+    align-items: center;
+    height: 100%;
+}
+
+.NewInGall > section {
+    height: fit-content;
+    width: 70vw;
+}
+
+.NewInGall > section > figure {
+    height: 45vh;
+    width: 100%;
+    background-color: gray;
+}
+
+.NewInGall > section > h3,
+.NewInGall > section > p {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.NewInGall section:nth-child(1){
+    display: none;
+}
+.NewInGall section:nth-child(2){
+    display: none;
+}
+.NewInGall section:nth-child(3){
+    display: none;
+}
+/* ----------------------------------
+   4 DELEN (CATEGORIEËN)
+---------------------------------- */
+.vierDelen {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.vierDelen a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.vierDelen a figure {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column-reverse;
+    background-size: cover;
+    background-position: center;
+}
+
+.vierDelen a figure h3 {
+    width: 100%;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.251);
+    font-family: Custom;
+    font-size: 40px;
+    color: white;
+}
+
+.vierDelen figure:hover {
+    background-color: rgba(128, 128, 128, 0.109);
+    filter: brightness(80%);
+}
+
+.vierDelen a:nth-child(1) figure { background-image: url("../afbeeldingen/WinterClothes.png"); }
+.vierDelen a:nth-child(2) figure { background-image: url("../afbeeldingen/Outlet.png"); }
+.vierDelen a:nth-child(3) figure { background-image: url("../afbeeldingen/accesoires.png"); }
+.vierDelen a:nth-child(4) figure { background-image: url("../afbeeldingen/shoes.png"); }
+
+
+/* ----------------------------------
+   FOOTER
+---------------------------------- */
+footer {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    width: 100vw;
+}
+
+footer > span {
+    width: 80vw;
+    margin-left: 10vw;
+    height: 2px;
+    background-color: black;
+    display: block;
+}
+
+footer > ul {
+    width: 100vw;
+    float: none;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+}
+.MFooter {
+    display: block;
+}
+footer ul:nth-child(2) {
+    display: none;
+}
+footer ul:nth-child(3) {
+    display: none;
+}
+
+footer ul:nth-child(3) li {
+    padding-right: 15vw;
+    text-align: right;
+}
+
+footer li {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 5px ;
+}
+
+footer li:hover {
+    color: gray;
+}
+
+footer > ul a {
+    all: unset;
+}
+
+footer h3 {
+    width: 100vw;
+    text-align: center;
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+    font-size: 20px;
+}
+
+
+/* ----------------------------------
+   WINKELWAGEN
+---------------------------------- */
+.wkhead {
+    height: fit-content;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10vh;
+}
+
+.wkhead h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.wkhead span {
+    width: 70vw;
+    margin-left: 15vw;
+    height: 0.3vh;
+    margin-top: 3%;
+    background-color: black;
+    display: block;
+}
+
+.winkelwagenArt {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.winkCon {
+    width: 80vw;
+    height: fit-content;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0;
+    flex-direction: column;
+}
+
+.winkItem {
+    width: 80%;
+    margin: 3vh 0;
+}
+
+.winkItem figure {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    float: left;
+    background-color: gray;
+    border: 1px double black;
+}
+
+.winkItem section {
+    width: 70%;
+    float: left;
+    padding-left: 5%;
+}
+
+.winkItem > section p:nth-child(1),
+.winkItem > section p:nth-child(2) {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    margin-top: 2%;
+}
+
+.winkItem > section p:nth-child(1) {
+    font-weight: 550;
+}
+
+.winkItem > section p:nth-child(3),
+.winkItem > section p:nth-child(4) {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    float: left;
+    margin-top: 25%;
+}
+
+.winkItem > section p:nth-child(4) {
+    font-weight: 550;
+}
+
+.winkCon span {
+    width: 70%;
+    height: 0.2vh;
+    background-color: black;
+}
+
+.winkCon span:nth-child(9) {
+    margin-top: 0.3vh;
+}
+
+.Bestellen {
+    width: 70%;
+    height: fit-content;
+    margin-top: 3vh;
+}
+
+.Bestellen p:nth-child(1),
+.Bestellen p:nth-child(2) {
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Bestellen p:nth-child(1) {
+    font-weight: 550;
+}
+
+.Bestellen p:nth-child(2) {
+    margin-top: 1.5vh;
+    font-size: 14px;
+}
+
+.Bestellen h3 {
+    text-align: right;
+    margin-top: 2vh;
+    font-size: 2rem;
+    text-decoration: underline;
+    width: fit-content;
+    margin: auto;
+}
+
+
+/* ----------------------------------
+   LOGIN FORMULIER
+---------------------------------- */
+.loginInputs {
+    height: fit-content;
+    padding-top: 0vh;
+}
+
+#naamInput,
+#passwordInput {
+    width: 70vw;
+    margin-left: 15vw;
+    margin-bottom: 3vh;
+    height: 4vh;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: black;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#passwordInput {
+    margin-bottom: 2vh;
+}
+
+#naamInput:focus,
+#passwordInput:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+    background-color: white;
+    color: rgb(55, 55, 55);
+}
+
+#naamInput:hover,
+#passwordInput:hover {
+    border-bottom: 2px solid gray;
+}
+
+.loginBB {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    height: fit-content;
+}
+
+.loginBB a {
+    all: unset;
+}
+
+.loginBB p,
+.loginBB h3 {
+    font-family: Custom;
+    width: fit-content;
+    margin-bottom: 2vh;
+}
+
+.loginBB h3 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin: auto;
+}
+
+.loginBB a:nth-child(1) {
+    margin-left: auto;
+}
+
+.loginBB a:nth-child(3) {
+    float: left;
+    margin-top: 3vh;
+}
+
+.loginBB a:nth-child(4) {
+    float: right;
+    margin-left: auto;
+    margin-top: 3vh;
+}
+}
